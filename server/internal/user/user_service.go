@@ -36,7 +36,7 @@ func (s *service) CreateUser(c context.Context, req *CreateUserReq) (*CreateUser
 
 	u := &User{
 		Username: req.Username,
-		Email:    req.Username,
+		Email:    req.Email,
 		Password: hashedPassword,
 	}
 
